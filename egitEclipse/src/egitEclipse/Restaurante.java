@@ -31,4 +31,15 @@ public class Restaurante {
      public double getPapas(){
          return papas;
      }
+     public int calculaComensales(){
+         int numcomensales=0;
+         double npapas = papas;
+         double nchocos = chocos ;
+         while((npapas>=1)&&(nchocos>=0.5)){
+           numcomensales=numcomensales+3;
+           npapas=npapas-1;
+           nchocos=nchocos-0.5;
+        }
+          return numcomensales; 
+      }
 }
